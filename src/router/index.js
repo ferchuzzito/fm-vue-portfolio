@@ -33,7 +33,7 @@ const routes = [
 // 2. Crea y configura el router
 const router = createRouter({
   // Necesario para GitHub Pages: usa hash (#) en la URL
-  history: createWebHashHistory('/nombre-de-tu-repositorio/'),
+  history: createWebHashHistory('fm-vue-portfolio'),
   routes
 });
 
