@@ -1,0 +1,34 @@
+/* src/assets/main.css */
+
+/* 1. Importa la fuente */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* 2. Directivas de Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3. Puedes agregar estilos globales adicionales aqui si es necesario */
+
+.attribution {
+  @apply text-xs text-center;
+}
+.attribution a {
+  @apply text-blue-attribution;
+}
+
+@layer utilities {
+    /* Clases para el Título */
+    .text-title-custom {
+        /* Replicamos la configuración de font-size: 1.25rem, line-height: 1.25rem */
+        @apply text-[1.25rem] leading-[1.25rem] font-bold; 
+    }
+
+    /* Clases para el Párrafo */
+    .text-paragraph-custom {
+        /* Replicamos la configuración de font-size: 0.938rem, line-height: 1.25rem */
+        @apply text-[0.938rem] leading-[1.25rem] font-normal;
+    }
+}
